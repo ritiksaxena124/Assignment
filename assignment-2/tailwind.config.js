@@ -10,7 +10,8 @@ export default {
       "orange": "#DC4A2D",
       "white": "#fff",
       "light-orange": "#D1D1D1",
-      "very-light-grey": "#B0B0B0"
+      "very-light-grey": "#B0B0B0",
+      "border": "#E7E7E7"
     }
   },
   plugins: [],

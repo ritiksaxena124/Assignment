@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <>
     {/* TODO: Make navbar responsive */}
-      <div className="px-10 py-[18px] flex items-center justify-between h-[109px]">
+      <div className="px-10 py-[18px] flex items-center justify-between h-[109px] border-b-[1px] border-border">
         {/* Logo */}
         <div className="bg-[#E7E7E7] px-[28px] py-[9px] h-full flex items-center justify-center font-bold text-xl">
           <span className="text-orange"> Logo </span>
