@@ -3,6 +3,8 @@ import ApplicantsIcon from "../../assets/users-01.svg";
 import MatchesIcon from "../../assets/user-check-01.svg";
 import MessagesIcon from "../../assets/message-square-01.svg";
 import ViewsIcon from "../../assets/eye.svg";
+import DeleteIcon from "../../assets/trash-03.svg";
+import EditIcon from "../../assets/edit-02.svg";
 
 interface StatisticsData {
   id: number;
@@ -40,11 +42,17 @@ const RightSection = () => {
   ];
   return (
     <>
-      <div className="py-9 px-6 w-1/4">
+      <div className="py-9 pr-4 md:w-full md:px-6 lg:w-1/4">
         {/* Editing buttons */}
         <div className="flex gap-4">
-          <Button type="secondary">Delete Job</Button>
-          <Button type="primary">Edit Job</Button>
+          <Button type="secondary">
+            <img src={DeleteIcon} alt="delete icon" width={20} height={20} />
+            Delete Job
+          </Button>
+          <Button type="primary">
+            <img src={EditIcon} alt="edit icon" width={20} height={20} />
+            Edit Job
+          </Button>
         </div>
         {/* Statistics */}
         <div className="p-3">
@@ -56,10 +64,10 @@ const RightSection = () => {
               {/* icon and name */}
               <div className="flex gap-[10px]">
                 <img src={statistic.icon} alt="icon" width={20} height={20} />
-                <span className="text-base font-medium">{statistic.title}</span>
+                <span className="text-base font-medium text-[#4F4F4F]">{statistic.title}</span>
               </div>
               {/* count */}
-              <span className="text-xl font-semibold">{statistic.count}</span>
+              <span className="text-xl font-semibold text-dark-grey">{statistic.count}</span>
             </div>
           ))}
         </div>
