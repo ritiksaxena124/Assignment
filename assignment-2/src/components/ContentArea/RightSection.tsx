@@ -42,7 +42,7 @@ const RightSection = () => {
   ];
   return (
     <>
-      <div className="py-9 pr-4 md:w-full md:px-6 lg:w-1/4">
+      <div className="py-8 pr-4 md:w-full md:px-4 lg:w-1/4 lg:mx-auto">
         {/* Editing buttons */}
         <div className="flex gap-4">
           <Button type="secondary">
@@ -55,19 +55,25 @@ const RightSection = () => {
           </Button>
         </div>
         {/* Statistics */}
-        <div className="p-3">
+        <div className="py-3 px-6">
           {statistics.map((statistic) => (
             <div
               key={statistic.id}
-              className="flex items-center justify-between py-[26px] border-b-[1px] border-border"
+              className={`flex items-center justify-between py-[26px] ${
+                statistic.id === 4 ? "border-b-0" : "border-b-[1px]"
+              } border-border`}
             >
               {/* icon and name */}
               <div className="flex gap-[10px]">
                 <img src={statistic.icon} alt="icon" width={20} height={20} />
-                <span className="text-base font-medium text-[#4F4F4F]">{statistic.title}</span>
+                <span className="text-base font-medium text-[#4F4F4F]">
+                  {statistic.title}
+                </span>
               </div>
               {/* count */}
-              <span className="text-xl font-semibold text-dark-grey">{statistic.count}</span>
+              <span className="text-xl font-semibold text-dark-grey">
+                {statistic.count}
+              </span>
             </div>
           ))}
         </div>

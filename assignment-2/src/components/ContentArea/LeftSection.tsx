@@ -7,12 +7,12 @@ import AtlassianLogo from "../../assets/atlassian-logo.png";
 
 const LeftSection = () => {
   return (
-    <div className="py-9 md:w-full md:pr-4 lg:w-3/4 border-r-2 border-border">
+    <div className="py-7 md:w-full lg:w-[85vw] border-r-2 border-border">
       {/* Job Role */}
-      <div className="md:pl-10 lg:pl-[100px] flex flex-col gap-6 pb-8 border-b-[1px] border-border">
+      <div className="md:pl-10 lg:pl-[107px] flex flex-col gap-6 pb-8 border-b-[1px] border-border">
         <div className="flex gap-3 items-center">
           <h1 className="text-[35px] text-dark-grey font-semibold">
-            Software Product Designer
+            Senior Product Designer
           </h1>
           <span className="h-[6px] w-[6px] rounded-full bg-grey"></span>
 
@@ -53,9 +53,9 @@ const LeftSection = () => {
         </div>
       </div>
       {/* Requirement Description */}
-      <div className="py-8 md:pl-10 lg:pl-[100px] border-b-[1px] border-border">
+      <div className="py-8 md:pl-10 lg:pl-[107px] border-b-[1px] border-border">
         <div className="flex gap-16">
-          <div className="">
+          <div className="min-w-[170px]">
             <h3 className="mb-2 text-sm font-medium text-dove-grey">
               Skills Required
             </h3>
@@ -85,19 +85,19 @@ const LeftSection = () => {
             </div>
           </div>
 
-          <div className="">
+          <div className="min-w-[170px]">
             <h3 className="mb-2 text-sm font-medium text-dove-grey">
               Preferred Language
             </h3>
             <div className=" text-base font-semibold text-dark-grey">English</div>
           </div>
 
-          <div className="">
+          <div className="min-w-[170px]">
             <h3 className="mb-2 text-sm font-medium text-dove-grey">Type</h3>
             <div className=" text-base font-semibold text-dark-grey">Full time</div>
           </div>
 
-          <div className="">
+          <div className="min-w-[170px]">
             <h3 className="mb-2 text-sm font-medium text-davys-grey">
               Years of Experience
             </h3>
@@ -108,7 +108,7 @@ const LeftSection = () => {
         </div>
       </div>
       {/* Job Description */}
-      <div className="py-8 md:pl-10 lg:pl-[100px] border-b-[1px] border-border">
+      <div className="py-8 md:pl-10 lg:pl-[107px] border-b-[1px] border-border text-dark-grey">
         <h3 className="mb-2 text-sm font-medium text-dove-grey">
           About the Job
         </h3>
@@ -140,7 +140,7 @@ const LeftSection = () => {
         <span>Work location: In person</span>
       </div>
       {/* Company Description */}
-      <div className="py-8 md:pl-10 lg:pl-[100px] border-b-[1px] border-border">
+      <div className="py-[60px] md:pl-10 lg:pl-[107px]">
         <div className="flex items-center gap-3 py-[10px]">
           <img
             src={AtlassianLogo}

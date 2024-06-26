@@ -6,9 +6,11 @@ import PageTabs from "./components/PageTabs";
 function App() {
   return (
     <>
-      <Navbar />
-      <PageTabs />
-      <ContentArea />
+      <div className="mx-auto relative">
+        <Navbar />
+        <PageTabs />
+        <ContentArea />
+      </div>
     </>
   );
 }

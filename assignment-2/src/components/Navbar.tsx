@@ -8,14 +8,14 @@ import DropDownIcon from "../assets/chevron-down.svg";
 const Navbar = () => {
   return (
     <>
-    {/* TODO: Make navbar responsive */}
-      <div className="px-10 py-[18px] flex items-center justify-between h-[109px] border-b-[1px] border-border">
+      {/* TODO: Make navbar responsive */}
+      <div className="px-11 py-[14px] flex items-center justify-between border-b-2 border-border sticky w-full bg-white top-0 left-0">
         {/* Logo */}
-        <div className="bg-[#E7E7E7] px-[28px] py-[9px] h-full flex items-center justify-center font-bold text-xl">
+        <div className="bg-[#E7E7E7] px-7 py-[18px] h-full flex items-center justify-center font-medium text-xl">
           <span className="text-orange"> Logo </span>
         </div>
         {/* Navbar Items */}
-        <div className="p-2 border-[0.5px] border-light-orange rounded-full flex space-x-20">
+        <div className="p-2 border-[0.5px] border-border rounded-full flex items-center justify-between space-x-[65px]">
           <div className="flex items-center cursor-pointer justify-center gap-2 bg-orange border-2 border-[#FCB4A5] p-4 rounded-full">
             {/* Nav Icon */}
             <img src={JobsIcon} width={24} height={24} />
@@ -25,28 +25,39 @@ const Navbar = () => {
 
           <div className="flex items-center cursor-pointer justify-center gap-2 p-4 rounded-full">
             {/* Nav Icon */}
-            <img src={MessagesIcon} width={24} height={24} />
+            <div className="relative">
+              <img src={MessagesIcon} width={24} height={24} />
+              <span className="w-[6px] h-[6px] rounded-full bg-orange absolute right-0 top-0"></span>
+            </div>
             {/* Nav Title */}
-            <span className="text-very-light-grey font-medium text-[20px]">Messages</span>
+            <span className="text-very-light-grey font-medium text-[20px]">
+              Messages
+            </span>
           </div>
 
           <div className="flex items-center cursor-pointer justify-center gap-2 p-4 rounded-full">
             {/* Nav Icon */}
             <img src={PaymentsIcon} width={24} height={24} />
             {/* Nav Title */}
-            <span className="text-very-light-grey font-medium text-[20px]">Payments</span>
+            <span className="text-very-light-grey font-medium text-[20px]">
+              Payments
+            </span>
           </div>
         </div>
         {/* Notification bell with avatar and dropdown */}
         <div className="flex space-x-4">
           {/* Notification bell */}
-          <img
-            src={NotificationBellIcon}
-            width={32}
-            height={32}
-            alt="notification-bell-icon"
-            className="cursor-pointer"
-          />
+
+          <div className="relative">
+            <img
+              src={NotificationBellIcon}
+              width={32}
+              height={32}
+              alt="notification-bell-icon"
+              className="cursor-pointer"
+            />
+            <span className="w-[6px] h-[6px] rounded-full bg-orange absolute right-1 top-0"></span>
+          </div>
           <div className="flex items-center space-x-[6px]">
             {/* Avatar and dropdown */}
             <img
